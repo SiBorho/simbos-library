@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "rootDir": ".",
+    "baseUrl": ".",
     "paths": {
       "simbos-library": ["./src/index"],
       "simbos-components": ["./src/components/index"],
-      "simbos-style": ["./src/style/index"],
+      "@simbos-style": ["./src/style/index"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

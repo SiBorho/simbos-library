@@ -1,19 +1,20 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { SimboText, multiply } from 'simbos-library';
+import { multiply } from 'simbos-library';
+import { SimboColor } from '@simbos-style';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    multiply(6, 8).then(setResult);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
-      <SimboText content="Das hat geklappt!" />
+      <Text style={{ color: SimboColor.ACCENT }}>Result: {result}</Text>
+      {/* <SimboText content="Das hat geklappt!" /> */}
     </View>
   );
 }

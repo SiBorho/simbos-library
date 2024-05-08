@@ -1,6 +1,6 @@
 import { Dimensions as Dimensions } from './ThemeTypes';
 
-export const LightUser_Dimensions = {
+export const Simbo_Dimensions = {
   [Dimensions.D2]: { value: 2 },
   [Dimensions.D4]: { value: 4 },
   [Dimensions.D8]: { value: 8 },
