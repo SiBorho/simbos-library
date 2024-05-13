@@ -5,4 +5,12 @@ export function multiply(a: number, b: number): Promise<number> {
 }
 
 moduleAlias.addAliases('@simbos-style', '.lib/typescript/src/index.tsx');
-export { default as SimboText } from './components/text/SimboText';
+
+export default {
+  get SimboText() {
+    return require('./components/text/SimboText').default;
+  },
+  get SimboStyle() {
+    return require('./style/index').default;
+  },
+};
