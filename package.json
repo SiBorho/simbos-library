@@ -1,6 +1,6 @@
 {
   "name": "simbos-library",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Simbos Library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
