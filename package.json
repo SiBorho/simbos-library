@@ -1,29 +1,15 @@
 {
   "name": "simbos-library",
-  "version": "0.1.8",
+  "version": "0.1.12",
   "description": "Simbos Library",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
-  "react-native": "src/index",
-  "source": "src/index",
+  "react-native": "src/index.tsx",
+  "source": "src/index.tsx",
   "files": [
     "src",
-    "lib",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
-    "!**/.*"
+    "lib"
   ],
   "scripts": {
     "example": "yarn workspace simbos-library-example",
@@ -35,9 +21,7 @@
     "release": "dotenv release-it --"
   },
   "keywords": [
-    "react-native",
-    "ios",
-    "android"
+    "simbos-library"
   ],
   "repository": {
     "type": "git",

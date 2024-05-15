@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "rootDir": ".",
-
-    "paths": {
-      "simbos-library": ["./src/index"],
-      "simbos-components": ["./src/components/index"],
-      "simboStyle": ["./src/style/index"],
-    },
+    "paths": { "simbos-library": ["./src/index"] },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
@@ -29,5 +23,7 @@
     "target": "esnext",
     "verbatimModuleSyntax": true
   },
-  "exclude": ["./example", "node_modules"]
+  "exclude": [
+    "lib/**/*"
+  ]
 }

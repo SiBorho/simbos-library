@@ -1,6 +1,6 @@
 import { Text as RNText, View, type ViewStyle } from 'react-native';
 import React from 'react';
-import { SimboColor } from 'simboStyle';
+import { SimboColor } from '../../style/index';
 
 // styling take a look? https://dev.to/vpicone/how-to-ship-static-assets-with-your-react-native-library-22pf
 
@@ -11,7 +11,7 @@ type SimboTextProps = {
   viewStyle?: ViewStyle;
 };
 
-export default class SimboText extends React.Component<SimboTextProps> {
+class SimboText extends React.Component<SimboTextProps> {
   render() {
     const { content, textAlign, textDecoration, viewStyle } = this.props;
 
@@ -30,3 +30,5 @@ export default class SimboText extends React.Component<SimboTextProps> {
     );
   }
 }
+
+export default SimboText;

@@ -1,12 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
+import { SimboColor, SimboText } from 'simbos-library';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={{ color: SimboColor.ACCENT }}>Result: 43</Text>
-      {/* <SimboText content="Das hat geklappt!" /> */}
+      <SimboText content="Das hat geklappt!??" />
     </View>
   );
 }
